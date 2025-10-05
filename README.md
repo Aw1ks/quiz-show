@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Quiz 
+This project involves a quiz designed in the form of cards with questions.
+## How to launch
+1. Download the repository: `git clone 'https://github.com/Aw1ks/quiz-show.git'`
+2. Go to folder: `cd quiz-show`
+3. Run the command: `npm start`
+## How to edit
+### Default
+    - package.json: The project configuration file that contains information about project dependencies, scripts, settings, and other project metadata.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    - package-lock.json (or yarn.lock): This file commits Exact versions of all installed packages in the project. It is used to ensure reproducibility package installations when working in a team and when deploying the project to other servers.
 
-## Available Scripts
+    - public/: Directory containing static files, which will be accessible from the root of your app. In it usually contains HTML, favicon, global CSS styles and other static resources.
 
-In the project directory, you can run:
+    - src/: The main directory of your application, which contains React source files. It usually Components, styles, scripts, and other files are found associated with your app.
 
-### `npm start`
+    - index.js: The main JavaScript file, which is entry point for your React app. In it, The root component is rendering applications to the HTML element on the page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    - App.js: A file containing a major component of your Application. Usually, routes and The components you want to display on the page.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    - App.css: The style file for the App.js component, Contains CSS rules that are applied to the component.
 
-### `npm test`
+    - index.css: A file with styles for the root element, in which renders the application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    - logo.svg: An example of an image file that by default is included in the demo project Create React App.
 
-### `npm run build`
+    - serviceWorker.js: File responsible for registration service worker who allows the app to run offline (caching content, etc.)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - setupTests.js: A file containing the settings for running tests of the application.
+### Custom
+1. JSX
+- Game.jsx: The main logic of the project (progress bar, cards with questions).
+- Result.jsx: The final card that appears after completing the quiz.
+2. CSS
+- Game.css: File styles 'Game.jsx'
